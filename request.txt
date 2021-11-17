@@ -1,0 +1,6 @@
+TikTokApi
+requests
+pathlib
+MySQL-python
+schedules
+pika
