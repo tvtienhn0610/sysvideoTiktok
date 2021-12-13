@@ -1,15 +1,15 @@
-numperThree = 10
-mysqlHost = "localhost"
-mysqlUser = "user"
-mysqlPass = "pass"
-mysqlDatabase = "database"
+numberThree = 10
+mysqlHost = "10.60.139.226:3306"
+mysqlUser = "apiservice"
+mysqlPass = "MochaVideo@#$2019"
+mysqlDatabase = "mochavideo"
 
 # rabit 
 
-rabbitHost = "localhost"
+rabbitHost = "10.254.146.163"
 rabbitPort = "5672"
-rabbitUser = "username"
-rabbitPass = "password"
+rabbitUser = "notificator"
+rabbitPass = "notificator"
 rabbitQueue = "password"
 
 # fpt

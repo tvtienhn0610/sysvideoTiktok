@@ -1,6 +1,7 @@
 TikTokApi
 requests
 pathlib
-MySQL-python
-schedules
+mysql-connector-python
+schedule
 pika
+playwright
