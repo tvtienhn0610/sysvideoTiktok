@@ -1,3 +1,12 @@
-2021-12-13 10:01:55,452 - my tool - INFO - start download data trend titok !!!!
-2021-12-13 10:01:57,697 - my tool - INFO - start process concurent download video tiktok !!!!!
-2021-12-13 10:01:57,698 - my tool - ERROR - Error start download video tiktok [WinError 183] Cannot create a file when that file already exists: 'videos/20211213'
+2021-12-15 08:34:39,543 - my tool - INFO - start download data trend titok !!!!
+2021-12-15 08:34:42,140 - my tool - INFO - start process concurent download video tiktok !!!!!
+2021-12-15 08:34:42,140 - my tool - INFO - start download video url = https://www.tiktok.com/@tiktok/video/6943708918040366341
+2021-12-15 08:34:52,091 - my tool - INFO - sucess save file 6943708918040366341
+2021-12-15 08:34:52,093 - my tool - INFO - start download video url = https://www.tiktok.com/@tiktok/video/6871293709275630854
+2021-12-15 08:35:11,186 - my tool - INFO - sucess save file 6871293709275630854
+2021-12-15 08:35:11,186 - my tool - INFO - start download video url = https://www.tiktok.com/@tiktok/video/6935521116114914566
+2021-12-15 08:35:19,260 - my tool - INFO - sucess save file 6935521116114914566
+2021-12-15 08:35:19,262 - my tool - INFO - start download video url = https://www.tiktok.com/@tiktok/video/6878464336357084422
+2021-12-15 08:35:27,102 - my tool - INFO - sucess save file 6878464336357084422
+2021-12-15 08:35:27,102 - my tool - INFO - start download video url = https://www.tiktok.com/@tiktok/video/6867963867230653702
+2021-12-15 08:35:35,616 - my tool - INFO - sucess save file 6867963867230653702

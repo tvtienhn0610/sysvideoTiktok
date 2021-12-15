@@ -17,7 +17,7 @@ import os
 import json
 
 print("start config tiktok!!!!!")
-# api = TikTokApi.get_instance()
+api = TikTokApi.get_instance() 
 print("end config tiktok!!!!!")
 
 logger = logging.getLogger('my tool')
@@ -66,7 +66,7 @@ def downloadVideoByUrl(tiktok) :
         return False
 
 
-def downloadVideoByUrlFinal(id , id_tiktok , embed_link) :
+def downloadVideoByUrlFinal(id , id_tiktok , embed_link , created_at) :
     try :
         logger.info("start process videoId={} , id_tiktok = {} , link = {}".format(id , id_tiktok , embed_link))
         logger.info("update status in process videoid ={}".format(id))
@@ -105,14 +105,14 @@ def getDataMySql():
 
         mycusor = mydb.cursor()
 
-        sql = "SELECT id , id_tiktok , embed_link FROM video_items_tiktok WHERE status = {} LIMIT = 10".format(1)
+        sql = "SELECT id , id_tiktok , embed_link , created_at FROM video_items_tiktok WHERE status = {} LIMIT = 10".format(1)
         mycusor.execute(sql)
 
         myresult = mycusor.fetchall()
 
         for result in myresult:
             print("id = {} , id_tiktok = {} , embed_link = {}".format(result[0],result[1],result[2]))
-            downloadVideoByUrlFinal(result[0],result[1],result[2])
+            downloadVideoByUrlFinal(result[0],result[1],result[2],result[3])
         
         # with concurrent.futures.ProcessPoolExecutor(max_workers=5) as executor:
         #         feature_result = {executor.submit(downloadVideoByUrlFinal,result[0],result[1],result[2]) : result for result in myresult}
@@ -240,18 +240,18 @@ def downloadvideo():
     except Exception as exc:
         logger.error("Error start download video tiktok {}".format(exc))
 
-def tetsobject():
-    video = Video(1,2,"link","folder")
-    print(video.link)
+# def tetsobject():
+#     video = Video(1,2,"link","folder")
+#     print(video.link)
 
-    json1 = json.dumps(video.__dict__)
-    print(json1)
+#     json1 = json.dumps(video.__dict__)
+#     print(json1)
 
-tetsobject()
-schedule.every(1).minutes.do(tetsobject)
-while True:   
-    schedule.run_pending()
-    time.sleep(1)
+# tetsobject()
+# schedule.every(1).minutes.do(tetsobject)
+# while True:   
+#     schedule.run_pending()
+#     time.sleep(1)
 
 
 

@@ -1,0 +1,3 @@
+2021-12-13 10:01:55,452 - my tool - INFO - start download data trend titok !!!!
+2021-12-13 10:01:57,697 - my tool - INFO - start process concurent download video tiktok !!!!!
+2021-12-13 10:01:57,698 - my tool - ERROR - Error start download video tiktok [WinError 183] Cannot create a file when that file already exists: 'videos/20211213'
