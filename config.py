@@ -18,3 +18,6 @@ fptHost = "fptHost"
 fptUser = "fptUser"
 fptPass = "fptPass"
 
+
+likjavaa = "https://stackoverflow.com/questions/67869103/downloading-tiktok-video-with-java-jsoup-got-403-error-code-attached"
+
