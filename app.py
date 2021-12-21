@@ -15,10 +15,11 @@ import time
 from datetime import datetime
 import os
 import json
+from TikTokApi import pyTiktok
 
-print("start config tiktok!!!!!")
-api = TikTokApi.get_instance() 
-print("end config tiktok!!!!!")
+# print("start config tiktok!!!!!")
+# api = TikTokApi.get_instance() 
+# print("end config tiktok!!!!!")
 
 logger = logging.getLogger('my tool')
 logger.setLevel(logging.INFO)
@@ -253,10 +254,11 @@ def downloadvideo():
 #     schedule.run_pending()
 #     time.sleep(1)
 
-
+def tesst() :
+    pyTiktok.downloadVideoById(1,6867963867230653702,"video/video1.mp4")
 
 
 if __name__ == "__main__":
     # tetsobject()
-    downloadvideo()
-
+    # downloadvideo()
+    tesst()
